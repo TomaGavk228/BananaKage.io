@@ -1,39 +1,68 @@
 body {
-  max-width: 800px;  
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('A_background_image_for_the_website_of_a_game_devel.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
-h1, h2 {
-  text-align: center;  
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
 }
 
 h1 {
-  font-size: 32px;
-  margin-bottom: 30px;
+    font-size: 48px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-h2 {
-  font-size: 24px;
-  margin: 30px 0 20px;
+.game-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 
-p {
-  margin-bottom: 20px;  
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #00aaff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-ul {
-  margin-left: 20px;
-  list-style-type: circle;
+.download-button:hover {
+    background-color: #008ecc;
 }
 
-a {
-  color: #007bff;
+.screenshots {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-a:hover {
-  text-decoration: none;
+.screenshots img {
+    width: 18%;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.screenshots img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
